@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            height: 70px;
+            /* background-color: aquamarine; */
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        .left {
+            height: 100%;
+            width: 20%;
+            float: left;
+            /* border: 2px solid orange; */
+        }
+
+        #logo {
+            text-decoration: none;
+            text-align: center;
+            font-size: 40px;
+            /* padding-top: 5px; */
+            color: black;
+            font-weight: 800;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 5px;
+        }
+
+        .icons {
+            /* text-decoration: none; */
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 40px;
+            color: rgb(33, 44, 49);
+        }
+
+        #home {
+            margin-left: 200px;
+        }
+
+        .right {
+            width: 20%;
+            /* text-align: center; */
+            height: 100%;
+            float: right;
+            /* border: 2px solid orange; */
+        }
+
+        #num {
+            text-decoration: none;
+            text-align: center;
+            font-size: 35px;
+            /* padding-top: 8px; */
+            color: black;
+            font-weight: 800;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .main {
+            width: 100%;
+            height: 650px;
+            /* background-color: brown; */
+        }
+
+        .mainleft,
+        .mainright {
+            height: 100%;
+            width: 50%;
+            /* background-color: rgb(127, 255, 129); */
+            float: left;
+            padding-top: 120px;
+        }
+
+        .vid {
+            width: 700px;
+            height: 390px;
+        }
+
+        .h1 {
+            font-size: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 10px;
+        }
+
+        .h5 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+        }
+
+        .p1 {
+            width: 430px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .but1 {
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(4, 126, 86);
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        #help {
+            background-color: rgb(4, 126, 86);
+            border: 5px solid rgb(4, 126, 86);
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .lane {
+            width: 100%;
+            height: 400px;
+            /* background-color: aqua; */
+        }
+
+        .box1, .box2, .box3{
+            float: left;
+            /* background-color: aquamarine; */
+            width: 33.33%;
+            height: 400px;
+            padding: 20px;
+        }
+
+        .image{
+            width: 460px;
+            text-align: center;
+            height: 220px;
+            background-color: rgba(147, 139, 139, 0.5);
+        }
+
+        .footer{
+            height: 700px;
+            width: 100%;
+            background-color: rgb(182, 180, 180);
+            margin-top: 70px;
+            padding: 30px;
+            overflow: hidden;
+            }
+
+            .heading{
+                font-size: 45px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                letter-spacing: 7px;
+                width: 85%;
+                float: left;
+                height: 100px;
+                /* border: 2px solid orange; */
+            }
+
+            .sml{
+                width: 50px;
+                height: 50px;
+                background-color: rgba(71, 65, 65, 0.748);
+                float: left;
+                margin-left: 10px;
+            }
+
+            .smlbox{
+                width: 15%;
+                float: left;
+                height: 100px;
+            }
+
+            .left1, .left2, .center2, .center1, .right1{
+                /* width: 33.33%; */
+                height: 700px;
+                float: left;
+            }
+
+            .left1, .center1{
+                width: 10%;
+            }
+
+            .left2, .center2{
+                width: 23.33%;
+            }
+            .heading1{
+                font-size: 27px;
+                height: 35px;
+                /* border: 2px solid black; */
+                padding: 5px;
+            }
+
+            .textp{
+                height: 100%;
+                /* border: 2px solid black; */
+                padding: 5px;
+            }
+
+            .text{
+                margin-top: 50px;
+            }
+
+            .boxes{
+                height: 150px;
+                width: 100%;
+                background-color: whitesmoke;
+                margin-top: 20px;
+            }
+
+            .right1{
+                padding: 20px;
+                background-color: rgba(41, 78, 105, 0.781);
+                height: 70%;
+                margin-top: 40px;
+                margin-left: 50px;
+                width: 400px;
+                float: left;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a class="left" id="logo" href="">
+            COMPANY
+        </a>
+        <a href="" class="center">
+            <a href="" class="icons" id="home">Home</a>
+            <a href="" class="icons">About</a>
+            <a href="" class="icons">Contact</a>
+            <a href="" class="icons" id="help">Help</a>
+            <a href="" class="icons">News</a>
+        </a>
+        <a href="" id="num" class="right">
+            999-456-009
+        </a>
+    </div>
+    <div class="main">
+        <div style="padding-left: 70px;" class="mainleft">
+            <h1 class="h1">LANDING PAGE TEMPLATE</h1>
+            <!-- <br> -->
+            <br>
+            <br>
+            <h5 class="h5">Lorem ipsum title</h5>
+            <br>
+            <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, blanditiis unde, eaque
+                voluptatum
+                mollitia inventore neque, quo facilis expedita minima nisi! Ipsum delectus impedit perferendis explicabo
+                autem nam maiores ipsam.</p>
+            <br>
+            <button class="but1">More</button>
+        </div>
+        <div class="mainright">
+            <video height="520px" class="vid" controls>
+                <source src="EVERY EXAM STORY - ELVISH YADAV.mp4">
+            </video>
+        </div>
+    </div>
+    <div class="lane">
+        <div class="box1">
+            <h1>
+                Lorem, ipsum.
+            </h1>
+            <br>
+            <div class="image"></div>
+            <br>
+            <p class="imgp">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum vel quidem minus fugit eaque id maxime?
+                Nobis quam magni illum? Iure qui a maxime amet error doloremque aspernatur cumque eum. Lorem, ipsum dolor.
+            </p>
+        </div>
+        <div class="box2">
+            <h1>
+                Lorem, ipsum.
+            </h1>
+            <br>
+            <div class="image"></div>
+            <br>
+            <p class="imgp">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nostrum ea quidem, eum asperiores
+                praesentium mollitia obcaecati iste aliquid, consectetur dolore ex voluptas, incidunt velit repudiandae
+                quod qui eius exercitationem.
+            </p>
+        </div>
+        <div class="box3">
+            <h1>
+                Lorem, ipsum.
+            </h1>
+            <br>
+            <div class="image"></div>
+            <br>
+            <p class="imgp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam doloremque hic, maxime,
+                quisquam sit commodi molestias officia soluta quibusdam repudiandae. Molestiae dolor a temporibus
+                consequuntur nesciunt at fugiat vel?
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1 class="heading">COMPANY ADVANTAGES</h1>
+        <div class="smlbox">
+            <div class="sml"></div>
+            <div class="sml"></div>
+            <div class="sml"></div>
+        </div>
+        <div class="left1">
+           <div class="boxes"></div>
+           <div class="boxes"></div>
+           <div class="boxes"></div>
+        </div>
+        <div class="left2">
+           <div class="text">
+            <h1 class="heading1">Lorem, ipsum.</h1>
+            <br>
+            <p class="textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, commodi.</p>
+           </div>
+           <div class="text">
+            <h1 class="heading1">Lorem, ipsum.</h1>
+            <br>
+            <p class="textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, commodi.</p>
+           </div>
+           <br>
+           <div class="text">
+            <h1 class="heading1">Lorem, ipsum.</h1>
+            <br>
+            <p class="textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, commodi.</p>
+           </div>
+        </div>
+        <div class="center1">
+            <div class="boxes"></div>
+           <div class="boxes"></div>
+           <div class="boxes"></div>
+        </div>
+        <div class="center2">
+            <div class="text">
+                <h1 class="heading1">Lorem, ipsum.</h1>
+                <br>
+                <p class="textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, commodi.</p>
+            </div>
+            <div class="text">
+                <h1 class="heading1">Lorem, ipsum.</h1>
+                <br>
+                <p class="textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, commodi.</p>
+            </div>
+            <br>
+            <div class="text">
+                <h1 class="heading1">Lorem, ipsum.</h1>
+                <br>
+                <p class="textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, commodi.</p>
+            </div>
+        </div>
+        <div class="right1"></div>
+    </div>
+</body>
+
+</html>
